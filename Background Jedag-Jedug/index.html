@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tutorial Javascript Semenit</title>
+</head>
+<body>
+
+
+    <h1>Kerenkan heheheh</h1>
+    <button onclick="setColor()">Ganti Warna</button>
+
+    <script>
+
+        function setColor () {
+            setInterval ( () => {
+                let randomCOlor = Math.floor( Math.random() * 16777215 ).toString(16)
+
+                document.body.style.backgroundColor = "#" + randomCOlor;
+            }, 1000) 
+        }
+
+    </script>
+
+</body>
+</htm>
