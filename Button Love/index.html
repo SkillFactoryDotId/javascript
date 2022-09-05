@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTN - Love</title>
+    <style>
+        .btn {
+            background-color: #fff;
+            border: 2px solid #fafafa;
+            color: #333;
+            font-weight: 700;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn .icon-heart {
+            background: url(empty-heart.png);
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0 auto;
+        }
+        
+        .active {
+            background: url(fill-heart.png) !important;
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+        }
+    
+        .margin-left-10px {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn btn-heart">
+        <div id="icon-change" class="icon-heart"></div>
+        <div class="margin-left-10px">Klik Disini</div>
+    </button>
+
+    <script>
+        
+        var element = document.querySelector('#icon-change'); 
+        document.querySelector('.btn').onclick = function() {
+            if (element.classList.contains('active')) {
+                element.classList.remove("active")
+            } else {
+                element.classList.add("active")
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>

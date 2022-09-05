@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Btn Copy</title>
+    <title>Button Copy</title>
     <style>
-        .textarea-section { 
+        .textarea-section {
             margin-top: 30px;
         }
-
         .tooltip {
             position: relative;
             display: inline-block;
@@ -50,7 +49,10 @@
     </style>
 </head>
 <body>
-    
+
+
+
+
     <h1>Klik tombol salin untuk mencopy url</h1>
 
     <input type="text" value="https://skillfactory.id/" id="myValue">
@@ -65,6 +67,10 @@
         <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
 
+
+
+    
+
     <script>
         function myFunction() {
             var copyText = document.getElementById("myValue");
@@ -73,12 +79,12 @@
             navigator.clipboard.writeText(copyText.value);
             
             var tooltip = document.getElementById("myTooltip");
-            tooltip.innerHTML = "Copied: " + copyText.value;
+            tooltip.innerHTML = "Tersalin: " + copyText.value;
         }
 
         function outFunc() {
             var tooltip = document.getElementById("myTooltip");
-            tooltip.innerHTML = "Copy to clipboard";
+            tooltip.innerHTML = "Salin ke clipboard";
         }
     </script>
 

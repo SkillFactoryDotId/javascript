@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Voice</title>
+
+    <style type="text/css">
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #button{
+            background-color: #5030dd;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ente kadang-kadang ente</h1>
+    <input id="button" type="button" value="PLAY SOUND" onclick="play()">
+    <audio id="audio" src="ente.mp3"></audio>
+
+    <script>
+
+        function play(){
+            var audio = document.getElementById("audio")
+            audio.play();
+        }
+
+    </script>
+    
+</body>
+</html>
