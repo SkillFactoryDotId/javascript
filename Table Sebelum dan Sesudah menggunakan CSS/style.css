@@ -5,10 +5,13 @@ body {
   color: #5030dd;
   border-collapse: collapse;
   font-size: 15px;
+  border-radius: 20px;
+  overflow: hidden ;
 }
 .demo-table th, 
 .demo-table td {
   padding: 7px 17px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .demo-table thead tr:nth-child(1) {
   background-color: #ffff0f;;
